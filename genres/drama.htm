@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!-- EMDb Template "Dark Comfort" by R3gi, Czech Republic, 2016.05.10 -->
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link href="../style.css" rel="stylesheet" type="text/css" />
+		<title>EMDB - Genres - Drama</title>
+		<!-- Sticky menu -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<script>
+			var sticky_element = ".menu"; // CSS ID or CLASS name of the element to stick
+			var sticky_element_clean = sticky_element.substring(1, sticky_element.length);
+			$(function() {
+				createSticky($(sticky_element));
+			});
+			function createSticky(sticky) {
+				$('<div id="' + sticky_element_clean + '_phantom"></div>').insertBefore(sticky_element); // Phantom prevents jump
+				if (typeof sticky !== "undefined") {
+					var pos = sticky.offset().top,
+						win = $(window);
+
+					win.on("scroll", function() {
+						if (win.scrollTop() >= pos) {
+							var phantomHeight = $(sticky_element).outerHeight();
+							sticky.addClass("fixed");
+							$('#' + sticky_element_clean + '_phantom').height(phantomHeight).show();
+
+							// Fix for anchor links position
+							var anchorOffset = '-' + phantomHeight + 'px';
+							$('.anchor').css({'visibility': 'hidden','display': 'block','position': 'relative','top': anchorOffset,});
+						} else {
+							sticky.removeClass("fixed");
+							$('#' + sticky_element_clean + '_phantom').hide();
+						}
+					});
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div id="header">
+			<div class="inner">
+				<div class="link_db">
+					<a href="http://www.imdb.com" target="_blank" alt="IMDB">IMDB</a>|<a href="http://www.emdb.eu" target="_blank" alt="EMDB">EMDB</a>
+				</div>
+				<div class="title_box"><div class="title">Genres - Drama</div></div>
+			</div>
+			<div class="navigation menu">
+				<div class="in">
+					<a href="../index.htm" class="category">EMDB</a>
+					<a href="../index.htm#genres" class="category"> > Genres</a>
+					<a href="drama.htm" class="category"> > Drama</a>
+				</div>
+			</div>
+		</div>
+		<div id="wrap">
+			<div class="category">
+				<div class="category">
+			<li class="thumbnail" href="../movies/1.htm">
+				<a href="../movies/1.htm"><img src="../covers/000001.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/1.htm">3:10 to Yuma</a>
+				</div>
+			</li>
+			
+</div>
+			</div>
+		</div>
+		<footer>
+			<div class="inner">
+				<a class="to_top" href="#header">^</a>
+				<div style="float: left">Dark Comfort by <a href="mailto:regiprogi@gmail.com">R3gi</a></div>
+				<div>Created with EMDB V3.16 (C) 2005-2018. No Rights Reserved ;-)</div>
+			</div>
+		</footer>
+	</body>
+</html>

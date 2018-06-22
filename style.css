@@ -1,0 +1,294 @@
+/* EMDb Template "Dark Comfort" V1.6 by R3gi, Czech Republic, 2016.05.10 */
+/* Important notice: IE sucks and eats glue */
+html, body {
+	height: 100%;
+}
+#header {
+    position: relative;
+	z-index: 1;
+	color: #78909C;
+	background: #37474F;
+    background: -webkit-linear-gradient(left, #37474F 10%, #2196F3 50%, #37474F 90%);
+    background: -o-linear-gradient(right, #37474F 10%, #2196F3 50%, #37474F 90%);
+    background: -moz-linear-gradient(right, #37474F 10%, #2196F3 50%, #37474F 90%);
+    background: linear-gradient(to right, #37474F 10%, #2196F3 50%, #37474F 90%);
+}
+
+body {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	margin: 0px;
+	overflow-y: scroll;
+	font-family: Verdana,Tahoma,Helvetica,Arial,sans-serif;
+	font-size: 10pt;
+	color: #FFFFFF;
+	background: #263238;
+}
+#wrap {
+	-webkit-box-flex: 1 0 auto;
+	-moz-box-flex: 1 0 auto;
+    -webkit-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+	-ms-flex-preferred-size: auto;
+	margin: 0 auto;
+	width: 90%;
+	max-width: 1200px;
+	height: auto;
+	padding: 10px 20px;
+	border: 1px solid #181C1F;
+	border-width: 0 1px;
+	background: #455A64;
+	-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.category_header {
+	padding: 3px 30px;
+	margin: 5px -20px;
+	cursor: default;
+	font-size: 12pt;
+	font-weight: bold;
+	color: #42A5F5;
+	text-shadow: 0 0 2px #000;
+    background: #37474F;
+    border: 1px solid #263238;
+	border-width: 1px 0;
+}
+.db_info {
+	padding: 3px 10px;
+	font-size: 8pt;
+	cursor: default;
+	float: right;
+	background: #232A31;
+	border: 1px solid #181C1F;
+	color: #CCCCCC;
+}
+.to_top {
+	position: fixed;
+    right: 25px;
+    bottom: 20px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin: auto;
+    clear: both;
+    overflow: hidden;
+    text-align: center;
+    font-size: 1.5em;
+    border: 1px solid #000;
+    color: #E3F2FD !important;
+	text-shadow: 0 0 2px #000;
+    background: #1976D2;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+footer {
+    -webkit-box-flex: 1 0 auto;
+    -moz-box-flex: 1 0 auto;
+    -webkit-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+	-ms-flex-preferred-size: auto;
+	-webkit-flex-grow: 0.01;
+	flex-grow: 0.01;
+	margin: 0;
+	width: 100%;
+	font-size: 8pt;
+	color: #78909C;
+	background: #232A31;
+	border-top: 1px solid #181C1F;
+	cursor: default;
+}
+footer .inner, #header .inner {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0 auto;
+	text-align: center;
+	padding: 10px 20px;
+}
+footer a {
+	color: #546E7A;
+	cursor: pointer;
+	text-decoration: none;
+}
+footer a:hover {
+	color: #29B6F6;
+	cursor: pointer;
+	text-decoration: none;
+}
+.link_db,.quick_nav {
+	padding: 6px 2px;
+	margin-bottom: 10px;
+	cursor: default;
+	float: left;
+	text-align: center;
+	background: #232A31;
+	border: 1px solid #181C1F;
+	color: #51A8FF;
+}
+.link_db a,.quick_nav a {
+	padding: 6px;
+	margin: -2px;
+	font-size: 10pt;
+	font-weight: bold;
+	text-decoration: none;
+	color: #51A8FF;
+	cursor: pointer;
+}
+.navigation {
+	margin: 0 -20px -6px -20px;
+	padding: 0 5px;
+	text-align: center;
+	position: relative;
+	cursor: default;
+	background: #232A31;
+	border: 1px solid #181C1F;
+	border-width: 1px 0;
+	color: #51A8FF;
+}
+.navigation.menu {
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	margin: 0;
+	width: 100%;
+	border-width: 1px 0 0 0;
+	border-bottom: 1px solid #181C1F;
+	-webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+.navigation.menu .in {
+	margin: 0 auto;
+	text-align: left;
+	max-width: 1200px;
+}
+.navigation a {
+	display: inline-block;
+	padding: 5px 6px;
+	margin-right: -6px;
+	vertical-align: middle;
+	font-size: 10pt;
+	font-weight: bold;
+	text-decoration:none;
+	color: #42A5F5;
+	cursor: pointer;
+}
+.navigation a:visited, .link_db a:visited, .quick_nav a:visited {
+	color: #2196F3;
+}
+.navigation a:active, .link_db a:active, .quick_nav a:active, .to_top:hover {
+	color: #FFEB00;
+}
+.navigation a:hover, .link_db a:hover, .quick_nav a:hover, .to_top:hover {
+    color: #FEFEFE !important;
+    background: #1E88E5;
+}
+.category a {
+	font-size: 10pt;
+	color: #CCCCCC;
+	text-decoration: none;
+}
+.category a:visited {
+	color: #CCCCCC;
+}
+.category a:active {
+	color: #CCCCCC;
+}
+.category a:hover, li:hover a td {
+	color: #FFFFFF;
+}
+.title_box {text-align: center;}
+.title {
+	font-family: Verdana,Tahoma,Helvetica,Arial,sans-serif;
+	font-size: 20pt;
+	font-weight: bold;
+	display: inline-block;
+	color: #FFFFFF;
+	text-shadow: 0px 0px 20px #000000;
+	cursor: default;
+}
+.thumbnail {
+	display: -moz-inline-stack;
+	display: inline-block;
+	display: inline-table;
+	border: 1px solid transparent;
+	padding: 3px;
+	width: 150px;
+	text-align: center;
+}
+.thumbnail:hover{
+	background: #232A31;
+	border: 1px solid #181C1F;
+	border-radius: 3px;
+}
+.thumbnail:focus {
+	background: #181C1F;
+}
+.thumbnail a {
+	display: block;
+}
+.thumbnail img {
+	height: 135px;
+	margin-top: 5px;
+	border: 0;
+	-webkit-box-shadow: 0 0 10px #000000;
+    -moz-box-shadow: 0 0 10px #000000;
+    box-shadow: 0 0 10px #000000;
+	background: #2196F3;
+}
+.thumbnail-text {
+	overflow-x: auto;
+    overflow-y: auto;
+	overflow: auto;
+	word-break: break-word;
+}
+.thumbnail-text a {
+	height: 50px;
+	paddding-top: 5px;
+	font-size: 10pt;
+	color: #CCCCCC;
+	text-decoration: none;
+}
+.latest_additions {
+	text-align: center;
+}
+.content_cover {
+	float: left;
+	padding: 10px 10px;
+	margin-right: 15px;
+	background: #232A31;
+	border: 1px solid #181C1F;
+	text-align: center;
+}
+.rel_links {
+	padding-top: 10px;
+}
+.rel_links a img  {
+	border: 3px solid transparent;
+}
+.rel_links a img:hover  {
+	border: 3px solid #1E88E5;
+}
+.rel_links a img:active {
+	border: 3px solid #FFEB00;
+}
+
+img.cover, .rel_links a img, img.star {
+	height: 100%;
+	width: auto;
+}
+.fixed {
+	position: fixed;
+	z-index: 9999;
+	top:0;
+}
