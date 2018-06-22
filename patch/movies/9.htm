@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!-- EMDb Template "Dark Comfort" by R3gi, Czech Republic, 2016.05.10 -->
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link href="../style.css" rel="stylesheet" type="text/css" />
+		<title>9 - Sicario: Day of the Soldado (2018)</title>
+		<!-- Sticky menu -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<script>
+			var sticky_element = ".menu"; // CSS ID or CLASS name of the element to stick
+			var sticky_element_clean = sticky_element.substring(1, sticky_element.length);
+			$(function() {
+				createSticky($(sticky_element));
+			});
+			function createSticky(sticky) {
+				$('<div id="' + sticky_element_clean + '_phantom"></div>').insertBefore(sticky_element); // Phantom prevents jump
+				if (typeof sticky !== "undefined") {
+					var pos = sticky.offset().top,
+						win = $(window);
+
+					win.on("scroll", function() {
+						if (win.scrollTop() >= pos) {
+							var phantomHeight = $(sticky_element).outerHeight();
+							sticky.addClass("fixed");
+							$('#' + sticky_element_clean + '_phantom').height(phantomHeight).show();
+
+							// Fix for anchor links position
+							var anchorOffset = '-' + phantomHeight + 'px';
+							$('.anchor').css({'visibility': 'hidden','display': 'block','position': 'relative','top': anchorOffset,});
+						} else {
+							sticky.removeClass("fixed");
+							$('#' + sticky_element_clean + '_phantom').hide();
+						}
+					});
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div id="header">
+			<div class="inner">
+				<div class="link_db">
+					<a href="http://www.imdb.com" target="_blank" alt="IMDB">IMDB</a>|<a href="http://www.emdb.eu" target="_blank" alt="EMDB">EMDB</a>
+				</div>
+				<div class="quick_nav" style="float:right;"> 
+					<a href="./8.htm" alt="<<">Previous</a>|<a href="./10.htm" alt=">>">Next</a>
+				</div>
+				<div class="title_box"><div class="title">Sicario: Day of the Soldado  (2018)</div></div>
+			</div>
+			<div class="navigation menu"> 
+				<div class="in">
+					<a href="../index.htm">EMDB</a>
+					<a href="../index.htm#all_movies"> > All Movies</a>
+					<a href="../index.htm#movies-0"> > Other</a>
+					<a href="9.htm"> > Sicario: Day of the Soldado</a>
+				</div>
+			</div>
+		</div>
+		<div id="wrap">
+			<div class="content_box">
+				<div class="content_cover">
+					<img class="cover" src="../covers/000009.jpg" alt="cover Sicario: Day of the Soldado"/></br>
+					<div class="rel_links"><a href="http://www.imdb.com/title/tt5052474"><img class="imdblink" src="../gif/imdb.gif" alt="link to Sicario: Day of the Soldado on IMDb" align="absbottom" /></a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=Pymm6cmE9uQ&hd=1"><img class="imdblink" src="../gif/youtube.gif" alt="link to trailer on YouTube" align="absbottom" /></a></div>
+				</div>
+				<div class="content">
+					
+						<p><b>IMDb Rating:</b></br>
+						<img class="star" src="../gif/graystar.gif" alt="star" />
+<img class="star" src="../gif/graystar.gif" alt="star" />
+<img class="star" src="../gif/graystar.gif" alt="star" />
+<img class="star" src="../gif/graystar.gif" alt="star" />
+<img class="star" src="../gif/graystar.gif" alt="star" />
+<img class="star" src="../gif/graystar.gif" alt="star" />
+<img class="star" src="../gif/graystar.gif" alt="star" />
+<img class="star" src="../gif/graystar.gif" alt="star" />
+<img class="star" src="../gif/graystar.gif" alt="star" />
+<img class="star" src="../gif/graystar.gif" alt="star" />
+
+						
+						</p>
+					
+					
+					
+					<p><b>Director(s):</b> Stefano Sollima</p>
+					<p><b>Cast:</b> Benicio Del Toro  (as Alejandro), Josh Brolin  (as Matt Graver), Isabela Moner  (as Isabel Reyes), Jeffrey Donovan  (as Steve Forsing), Catherine Keener  (as Cynthia Foards)</p>
+					<p><b>Country:</b> USA &nbsp;&nbsp;<b>Studio:</b> Columbia Pictures</p>
+					<p><b>Duration:</b> 122 minutes</p>
+					<p><b>Genre(s):</b> Action, Thriller, Drama, Crime</p>
+				
+					<p><b>Spoken Languages:</b> English, Spanish &nbsp;&nbsp;</p>
+					
+					<p><b>Storyline:</b> FBI agent Matt Graver teams up with operative Alejandro Gillick to prevent Mexican drug cartels from smuggling terrorists across the U.S. border.</p>
+			
+					
+					
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="inner">
+				<a class="to_top" href="#header">^</a>
+				<div style="float: left">Dark Comfort by <a href="mailto:regiprogi@gmail.com">R3gi</a></div>
+				<div>Created with EMDB V3.16 (C) 2005-2018. No Rights Reserved ;-)</div>
+			</div>
+		</footer>
+	</body>
+</html>

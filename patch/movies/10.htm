@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!-- EMDb Template "Dark Comfort" by R3gi, Czech Republic, 2016.05.10 -->
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link href="../style.css" rel="stylesheet" type="text/css" />
+		<title>10 - Uncle Drew (2018)</title>
+		<!-- Sticky menu -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<script>
+			var sticky_element = ".menu"; // CSS ID or CLASS name of the element to stick
+			var sticky_element_clean = sticky_element.substring(1, sticky_element.length);
+			$(function() {
+				createSticky($(sticky_element));
+			});
+			function createSticky(sticky) {
+				$('<div id="' + sticky_element_clean + '_phantom"></div>').insertBefore(sticky_element); // Phantom prevents jump
+				if (typeof sticky !== "undefined") {
+					var pos = sticky.offset().top,
+						win = $(window);
+
+					win.on("scroll", function() {
+						if (win.scrollTop() >= pos) {
+							var phantomHeight = $(sticky_element).outerHeight();
+							sticky.addClass("fixed");
+							$('#' + sticky_element_clean + '_phantom').height(phantomHeight).show();
+
+							// Fix for anchor links position
+							var anchorOffset = '-' + phantomHeight + 'px';
+							$('.anchor').css({'visibility': 'hidden','display': 'block','position': 'relative','top': anchorOffset,});
+						} else {
+							sticky.removeClass("fixed");
+							$('#' + sticky_element_clean + '_phantom').hide();
+						}
+					});
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div id="header">
+			<div class="inner">
+				<div class="link_db">
+					<a href="http://www.imdb.com" target="_blank" alt="IMDB">IMDB</a>|<a href="http://www.emdb.eu" target="_blank" alt="EMDB">EMDB</a>
+				</div>
+				<div class="quick_nav" style="float:right;"> 
+					<a href="./9.htm" alt="<<">Previous</a>|<a href="./11.htm" alt=">>">Next</a>
+				</div>
+				<div class="title_box"><div class="title">Uncle Drew  (2018)</div></div>
+			</div>
+			<div class="navigation menu"> 
+				<div class="in">
+					<a href="../index.htm">EMDB</a>
+					<a href="../index.htm#all_movies"> > All Movies</a>
+					<a href="../index.htm#movies-0"> > Other</a>
+					<a href="10.htm"> > Uncle Drew</a>
+				</div>
+			</div>
+		</div>
+		<div id="wrap">
+			<div class="content_box">
+				<div class="content_cover">
+					<img class="cover" src="../covers/000010.jpg" alt="cover Uncle Drew"/></br>
+					<div class="rel_links"><a href="http://www.imdb.com/title/tt7334528"><img class="imdblink" src="../gif/imdb.gif" alt="link to Uncle Drew on IMDb" align="absbottom" /></a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=9H2SSvQ8ihA&hd=1"><img class="imdblink" src="../gif/youtube.gif" alt="link to trailer on YouTube" align="absbottom" /></a></div>
+				</div>
+				<div class="content">
+					
+						<p><b>IMDb Rating:</b></br>
+						<img class="star" src="../gif/graystar.gif" alt="star" />
+<img class="star" src="../gif/graystar.gif" alt="star" />
+<img class="star" src="../gif/graystar.gif" alt="star" />
+<img class="star" src="../gif/graystar.gif" alt="star" />
+<img class="star" src="../gif/graystar.gif" alt="star" />
+<img class="star" src="../gif/graystar.gif" alt="star" />
+<img class="star" src="../gif/graystar.gif" alt="star" />
+<img class="star" src="../gif/graystar.gif" alt="star" />
+<img class="star" src="../gif/graystar.gif" alt="star" />
+<img class="star" src="../gif/graystar.gif" alt="star" />
+
+						
+						</p>
+					
+					
+					
+					<p><b>Director(s):</b> Charles Stone III</p>
+					<p><b>Cast:</b> Kyrie Irving  (as Uncle Drew), LilRel Howery  (as Dax), Shaquille O'Neal  (as Big Fella), Chris Webber  (as Preacher), Reggie Miller  (as Lights)</p>
+					<p><b>Country:</b> USA &nbsp;&nbsp;<b>Studio:</b> Summit Entertainment</p>
+					<p><b>Duration:</b> 103 minutes</p>
+					<p><b>Genre(s):</b> Comedy</p>
+				
+					<p><b>Spoken Languages:</b> English &nbsp;&nbsp;</p>
+					
+					<p><b>Storyline:</b> Uncle Drew recruits a squad of older basketball players to return to the court to compete in a tournament.</p>
+			
+					
+					
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="inner">
+				<a class="to_top" href="#header">^</a>
+				<div style="float: left">Dark Comfort by <a href="mailto:regiprogi@gmail.com">R3gi</a></div>
+				<div>Created with EMDB V3.16 (C) 2005-2018. No Rights Reserved ;-)</div>
+			</div>
+		</footer>
+	</body>
+</html>
