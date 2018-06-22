@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!-- EMDb Template "Dark Comfort" by R3gi, Czech Republic, 2016.05.10 -->
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link href="../style.css" rel="stylesheet" type="text/css" />
+		<title>2 - Jurassic World: Fallen Kingdom (2018)</title>
+		<!-- Sticky menu -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<script>
+			var sticky_element = ".menu"; // CSS ID or CLASS name of the element to stick
+			var sticky_element_clean = sticky_element.substring(1, sticky_element.length);
+			$(function() {
+				createSticky($(sticky_element));
+			});
+			function createSticky(sticky) {
+				$('<div id="' + sticky_element_clean + '_phantom"></div>').insertBefore(sticky_element); // Phantom prevents jump
+				if (typeof sticky !== "undefined") {
+					var pos = sticky.offset().top,
+						win = $(window);
+
+					win.on("scroll", function() {
+						if (win.scrollTop() >= pos) {
+							var phantomHeight = $(sticky_element).outerHeight();
+							sticky.addClass("fixed");
+							$('#' + sticky_element_clean + '_phantom').height(phantomHeight).show();
+
+							// Fix for anchor links position
+							var anchorOffset = '-' + phantomHeight + 'px';
+							$('.anchor').css({'visibility': 'hidden','display': 'block','position': 'relative','top': anchorOffset,});
+						} else {
+							sticky.removeClass("fixed");
+							$('#' + sticky_element_clean + '_phantom').hide();
+						}
+					});
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div id="header">
+			<div class="inner">
+				<div class="link_db">
+					<a href="http://www.imdb.com" target="_blank" alt="IMDB">IMDB</a>|<a href="http://www.emdb.eu" target="_blank" alt="EMDB">EMDB</a>
+				</div>
+				<div class="quick_nav" style="float:right;"> 
+					<a href="./1.htm" alt="<<">Previous</a>|<a href="./2.htm" alt=">>">Next</a>
+				</div>
+				<div class="title_box"><div class="title">Jurassic World: Fallen Kingdom  (2018)</div></div>
+			</div>
+			<div class="navigation menu"> 
+				<div class="in">
+					<a href="../index.htm">EMDB</a>
+					<a href="../index.htm#all_movies"> > All Movies</a>
+					<a href="../index.htm#movies-0"> > Other</a>
+					<a href="2.htm"> > Jurassic World: Fallen Kingdom</a>
+				</div>
+			</div>
+		</div>
+		<div id="wrap">
+			<div class="content_box">
+				<div class="content_cover">
+					<img class="cover" src="../covers/000002.jpg" alt="cover Jurassic World: Fallen Kingdom"/></br>
+					<div class="rel_links"><a href="http://www.imdb.com/title/tt4881806"><img class="imdblink" src="../gif/imdb.gif" alt="link to Jurassic World: Fallen Kingdom on IMDb" align="absbottom" /></a>&nbsp;&nbsp;<a href="http://www.imdb.com/video/imdb/vi2465250073?playlistId=tt4881806&ref_=tt_ov_vi"><img class="imdblink" src="../gif/trailer.gif" alt="link to trailer on IMDb" align="absbottom" /></a></div>
+				</div>
+				<div class="content">
+					
+						<p><b>IMDb Rating:</b></br>
+						<img class="star" src="../gif/goldstar.gif" alt="star" />
+<img class="star" src="../gif/goldstar.gif" alt="star" />
+<img class="star" src="../gif/goldstar.gif" alt="star" />
+<img class="star" src="../gif/goldstar.gif" alt="star" />
+<img class="star" src="../gif/goldstar.gif" alt="star" />
+<img class="star" src="../gif/goldstar.gif" alt="star" />
+<img class="star" src="../gif/goldstar.gif" alt="star" />
+<img class="star" src="../gif/graystar.gif" alt="star" />
+<img class="star" src="../gif/graystar.gif" alt="star" />
+<img class="star" src="../gif/graystar.gif" alt="star" />
+
+						6.7/10  (39315 votes)
+						</p>
+					
+					
+					
+					<p><b>Director(s):</b> J.A. Bayona</p>
+					<p><b>Cast:</b> Chris Pratt  (as Owen Grady), Bryce Dallas Howard  (as Claire Dearing), Rafe Spall  (as Eli Mills), Justice Smith  (as Franklin Webb), Daniella Pineda  (as Zia Rodriguez)</p>
+					<p><b>Country:</b> USA &nbsp;&nbsp;<b>Studio:</b> Universal Pictures</p>
+					<p><b>Duration:</b> 128 minutes</p>
+					<p><b>Genre(s):</b> Action, Sci-Fi, Adventure</p>
+				
+					<p><b>Spoken Languages:</b> English, Russian &nbsp;&nbsp;</p>
+					
+					<p><b>Storyline:</b> A volcanic eruption threatens the remaining dinosaurs on the island of Isla Nublar, where the creatures have freely roamed for several years after the demise of an animal theme park known as Jurassic World. Claire Dearing, the former park manager, has now founded the Dinosaur Protection Group, an organization dedicated to protecting the dinosaurs. To help with her cause, Claire has recruited Owen Grady, a former dinosaur trainer who worked at the park, to prevent the extinction of the dinosaurs once again.</p>
+			
+					
+					
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="inner">
+				<a class="to_top" href="#header">^</a>
+				<div style="float: left">Dark Comfort by <a href="mailto:regiprogi@gmail.com">R3gi</a></div>
+				<div>Created with EMDB V3.16 (C) 2005-2018. No Rights Reserved ;-)</div>
+			</div>
+		</footer>
+	</body>
+</html>
