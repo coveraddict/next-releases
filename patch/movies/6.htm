@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!-- EMDb Template "Dark Comfort" by R3gi, Czech Republic, 2016.05.10 -->
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link href="../style.css" rel="stylesheet" type="text/css" />
+		<title>6 - Izzy Gets the Fuck Across Town (2017)</title>
+		<!-- Sticky menu -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<script>
+			var sticky_element = ".menu"; // CSS ID or CLASS name of the element to stick
+			var sticky_element_clean = sticky_element.substring(1, sticky_element.length);
+			$(function() {
+				createSticky($(sticky_element));
+			});
+			function createSticky(sticky) {
+				$('<div id="' + sticky_element_clean + '_phantom"></div>').insertBefore(sticky_element); // Phantom prevents jump
+				if (typeof sticky !== "undefined") {
+					var pos = sticky.offset().top,
+						win = $(window);
+
+					win.on("scroll", function() {
+						if (win.scrollTop() >= pos) {
+							var phantomHeight = $(sticky_element).outerHeight();
+							sticky.addClass("fixed");
+							$('#' + sticky_element_clean + '_phantom').height(phantomHeight).show();
+
+							// Fix for anchor links position
+							var anchorOffset = '-' + phantomHeight + 'px';
+							$('.anchor').css({'visibility': 'hidden','display': 'block','position': 'relative','top': anchorOffset,});
+						} else {
+							sticky.removeClass("fixed");
+							$('#' + sticky_element_clean + '_phantom').hide();
+						}
+					});
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div id="header">
+			<div class="inner">
+				<div class="link_db">
+					<a href="http://www.imdb.com" target="_blank" alt="IMDB">IMDB</a>|<a href="http://www.emdb.eu" target="_blank" alt="EMDB">EMDB</a>
+				</div>
+				<div class="quick_nav" style="float:right;"> 
+					<a href="./5.htm" alt="<<">Previous</a>|<a href="./7.htm" alt=">>">Next</a>
+				</div>
+				<div class="title_box"><div class="title">Izzy Gets the Fuck Across Town  (2017)</div></div>
+			</div>
+			<div class="navigation menu"> 
+				<div class="in">
+					<a href="../index.htm">EMDB</a>
+					<a href="../index.htm#all_movies"> > All Movies</a>
+					<a href="../index.htm#movies-0"> > Other</a>
+					<a href="6.htm"> > Izzy Gets the Fuck Across Town</a>
+				</div>
+			</div>
+		</div>
+		<div id="wrap">
+			<div class="content_box">
+				<div class="content_cover">
+					<img class="cover" src="../covers/000006.jpg" alt="cover Izzy Gets the Fuck Across Town"/></br>
+					<div class="rel_links"><a href="http://www.imdb.com/title/tt5198796"><img class="imdblink" src="../gif/imdb.gif" alt="link to Izzy Gets the Fuck Across Town on IMDb" align="absbottom" /></a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=mTiQ5U4cdOE&hd=1"><img class="imdblink" src="../gif/youtube.gif" alt="link to trailer on YouTube" align="absbottom" /></a></div>
+				</div>
+				<div class="content">
+					
+						<p><b>IMDb Rating:</b></br>
+						<img class="star" src="../gif/goldstar.gif" alt="star" />
+<img class="star" src="../gif/goldstar.gif" alt="star" />
+<img class="star" src="../gif/goldstar.gif" alt="star" />
+<img class="star" src="../gif/goldstar.gif" alt="star" />
+<img class="star" src="../gif/goldstar.gif" alt="star" />
+<img class="star" src="../gif/graystar.gif" alt="star" />
+<img class="star" src="../gif/graystar.gif" alt="star" />
+<img class="star" src="../gif/graystar.gif" alt="star" />
+<img class="star" src="../gif/graystar.gif" alt="star" />
+<img class="star" src="../gif/graystar.gif" alt="star" />
+
+						5.3/10  (222 votes)
+						</p>
+					
+					
+					
+					<p><b>Director(s):</b> Christian Papierniak</p>
+					<p><b>Cast:</b> Alia Shawkat  (as Agatha Benson), Mackenzie Davis  (as Izzy), Haley Joel Osment  (as Walt), Carrie Coon  (as Virginia), Lakeith Stanfield  (as George)</p>
+					<p><b>Country:</b> USA &nbsp;&nbsp;<b>Studio:</b> Shout! Factory</p>
+					<p><b>Duration:</b> 86 minutes</p>
+					<p><b>Genre(s):</b> Drama, Comedy</p>
+				
+					<p><b>Spoken Languages:</b> English &nbsp;&nbsp;</p>
+					
+					<p><b>Storyline:</b> A woman at rock bottom must find her way across Los Angeles in order to crash her ex-boyfriend's engagement party.</p>
+			
+					
+					
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="inner">
+				<a class="to_top" href="#header">^</a>
+				<div style="float: left">Dark Comfort by <a href="mailto:regiprogi@gmail.com">R3gi</a></div>
+				<div>Created with EMDB V3.16 (C) 2005-2018. No Rights Reserved ;-)</div>
+			</div>
+		</footer>
+	</body>
+</html>
